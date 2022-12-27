@@ -4,31 +4,13 @@ body {
     background-color: #FFFFFF;
 }
 
-.site-body {}
-
+.list {
+    list-style: none;
+}
 
 /*---------- HEADER------------ */
 
-.header {
-    background-color: #FFFFFF;
-}
-
-.header-navigation {}
-
-.header-logo {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    color: #2E2F42;
-    text-transform: uppercase;
-}
-
 .header-logo-web {
-    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -37,21 +19,29 @@ body {
     letter-spacing: 0.03em;
     color: #4D5AE5;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.header-logo :hover {
-    color: #404BBF;
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color: #2E2F42;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-.header-logo :focus {
+
+.header-logo:hover {
+    color: #434455;
+}
+.header-logo:focus {
     color:#4D5AE5;
 }
 
-.header-list {}
-
-.header-item {}
-
-.header-link {
-    text-decoration: none;
+.link {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -59,49 +49,46 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-decoration: none;
 }
 
-.header-link :hover {
-    color: #404BBF;
+.link:hover {
+    color: #434455;
 }
-.header-link :focus {
+.link:focus {
     color:#4D5AE5;
 }
 
 .header-mail {
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-}
-
-.header-mail :hover {
-    color: #404BBF;
-}
-.header-mail :focus {
-    color:#4D5AE5;
+    text-decoration: none;
 }
 
 .header-tel {
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
     color: #2E2F42;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.header-tel :hover {
-    color: #404BBF;
+.header-mail:hover,
+.header-mail:focus {
+    color:#4D5AE5;
 }
-.header-tel :focus {
+
+.header-tel:hover,
+.header-tel:focus {
     color: #4D5AE5;
 }
 
@@ -112,18 +99,14 @@ body {
 }
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .hero-btn {
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -131,7 +114,25 @@ body {
     line-height: 1.18;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+}
+
+.hero-btn:active {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* ----------SECTION----------- */
 
 .about {}
 
@@ -201,6 +202,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .footer {
@@ -235,3 +237,5 @@ body {
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
+
+/* ... */
